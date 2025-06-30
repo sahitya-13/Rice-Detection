@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details Page</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">RICE TYPE CLASSIFICATION</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/details" class="active">Predict</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="dt">
+    <h2>Details Page</h2>
+</div>
+<div>
+    <main class="details">
+    
+        <h3>Upload Your Image</h3>
+        <form method="POST" enctype="multipart/form-data">
+            <label>Choose Image:</label>
+            <input type="file" name="image" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

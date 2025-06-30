@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rice Type Detection</title>
+    <link
+      rel="stylesheet"
+      href="C:\Users\acer\Desktop\rice_classification\Rice-Type-Detection\static\style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">RICE TYPE DETECTION</div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/details">Predict</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div class="hero1"></div>
+        <div class="hero">
+          <h1>Welcome to Rice Type Detection</h1>
+          <p>This model can detect rice type based on rice images.</p>
+          <a href="/details" class="btn">Predict</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <h2>About the Rice Type Classification Model</h2>
+      <div class="about-content">
+        <img
+          src="{{ url_for('static', filename='crop.jpg') }}"
+          alt="Rice Field"
+        />
+        <ul>
+          <li>
+            <strong>Accuracy of the Model:</strong> 97% accuracy on test data
+          </li>
+          <li>
+            <strong>Different Types of Rice:</strong> Can classify 5 different
+            types
+          </li>
+          <li>
+            <strong>Dataset Used:</strong> Dataset of 75,000 labeled rice grain
+            images from Kaggle
+          </li>
+          <li>
+            <strong>Technical Architecture:</strong> Model trained using
+            MobileNetV2 (Transfer Learning)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section dark">
+      <h2>Purpose of Model</h2>
+      <p>
+        This model used to categorize rice samples 
+      </p>
+      <p>Very accurate and reliable classification!</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <div class="contact-boxes">
+        <div>
+          <h3>📍 Our Address</h3>
+          <p>A108 Adam Street, Pune, India</p>
+        </div>
+        <div>
+          <h3>📧 Email Us</h3>
+          <p>info@example.com<br />contact@example.com</p>
+        </div>
+        <div>
+          <h3>📞 Call Us</h3>
+          <p>+91 55892 55488<br />+91 66782 25444</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Rice Type Detection.</p>
+    </footer>
+  </body>
+</html>
